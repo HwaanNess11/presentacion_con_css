@@ -1,1 +1,341 @@
+/* ********************************* Body ********************************** */
+body{
+    background-color:  rgb(75, 82, 87);
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
 
+/* ********************************* Scrollbar del body ********************************** */
+body::-webkit-scrollbar{
+    width: 15px;
+}
+  
+body::-webkit-scrollbar-track{
+    background: rgb(97, 98, 134);
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(15,26,32); 
+    border: 3px solid rgb(97, 98, 134); 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-button{
+    background-color: rgb(15,26,32);
+}
+
+/* *********************************Definir fuentes que se usan********************************** */
+@font-face {
+    font-family: Harg;
+    src: url(fonts/Hargetus.ttf);
+}
+
+@font-face {
+    font-family: Nood;
+    src: url(fonts/big_noodle_titling.ttf);
+}
+
+/* *********************************Encabezado con mi nombre********************************** */
+header{
+    background-image: url("https://img.freepik.com/vector-premium/educacion-vectorial-fondo-transparente-ecuaciones-formulas-matematicas-pizarra_353206-595.jpg?w=900");
+    font-family: Harg;
+    font-size: 7rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* *********************************Descripción********************************** */
+.subt{
+    background-color: rgb(31, 45, 54);
+    font-family: Harg;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    height: 30rem;
+}
+
+/* ********************************Texto de introducción********************************** */
+.texto{
+    font-size: large;
+    width: 25rem;
+    height: 30rem;
+    margin: 2rem;
+}
+
+.listas{
+    font-size: medium;
+    width: 20rem;
+    height: 30rem;
+    margin: 2rem;
+    overflow: auto;
+}
+
+/* ****************************Scrollbar de una parte de la introducción********************************** */
+.listas::-webkit-scrollbar{
+    width: 15px;
+}
+  
+.listas::-webkit-scrollbar-track{
+    background: rgb(97, 98, 134);
+}
+  
+.listas::-webkit-scrollbar-thumb{
+    background-color: rgb(15,26,32); 
+    border: 3px solid rgb(97, 98, 134); 
+    border-radius: 10px;
+}
+
+.listas::-webkit-scrollbar-button{
+    background-color: rgb(15,26,32);
+}
+
+/* ************************Barra estática al lado derecho de la pantalla***************************** */
+.barra{
+    position: fixed;
+    height: 100%;
+    width: 7rem;
+    background-image: url("https://img.freepik.com/vector-premium/educacion-vectorial-fondo-transparente-ecuaciones-formulas-matematicas-pizarra_353206-595.jpg?w=900");
+    right: 8px;
+    margin-top: 0%;
+    border: none;
+}
+
+/* ******************************Formato de las tablas********************************** */
+table{   
+    position: sticky;
+    border-color: rgb(15,26,32);
+    background-color: rgb(46, 50, 53);
+    text-align: center;
+    width: 90%;
+    border-style: dotted;
+}
+
+th{
+    font-family: Nood;
+    font-size: x-large;
+    font-weight: 50;
+}
+
+/* ******************************Formato de los subtítulos********************************** */
+h3{
+    background-color: rgb(15,26,32);    
+    font-family: Nood;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 50;
+    border-style: groove;
+}
+h3:hover{
+    color:rgb(0, 0, 255);
+    transform: translate(3rem);
+    
+}
+
+/* ******************************Formato de los links********************************** */
+a:visited{
+    color: black;
+}
+
+a:link{
+    color: rgb(0, 233, 0);
+}
+
+a:hover{
+    color: rgb(255, 255, 0);
+}
+
+/* ******************************Formato de loas imagenes********************************** */
+img.ig{
+    border-radius: 100%;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+/* ******************************Dibujo********************************** */
+.fondo{
+    position: relative;
+    background-color: rgb(255, 255, 104);
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#cabeza{
+    position: relative;
+    background-color: rgb(73, 176, 236);
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 350px;
+    height: 320px;
+    margin: auto;
+    top: 30px;
+}
+
+#cuerpo{
+    position: relative;
+    background-color: rgb(73, 176, 236);
+    border-style: solid;
+    border-color: black;
+    border-radius: 40%;
+    width: 200px;
+    height: 220px;
+    margin: auto;
+}
+
+#cuerpo2{
+    position: relative;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 40%;
+    width: 150px;
+    height: 160px;
+    margin: auto;
+}
+
+#cara{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 300px;
+    height: 270px;
+    bottom: 1px;
+    left:5%;
+}
+
+#collar{
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30%;
+    width: 200px;
+    height: 20px;
+    bottom: 30%;
+    left: 29%;
+}
+
+.ojos{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 70px;
+    height: 85px;
+    top: 10px;
+}
+
+#ojo-d{
+    left: 174px;
+} 
+#ojo-i{
+    right: 174px;
+} 
+
+.pupila{
+    position: absolute;
+    background-color: black;
+    border-radius: 100%;
+    width: 25px;
+    height: 35px;
+    bottom: 30%;
+}
+
+#iz{
+    right: 5px;
+}
+
+#de{
+    left: 5px;
+}
+
+#casc{
+    position: absolute;
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    right: 220px;
+    bottom: 20%;
+}
+
+#nariz{
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    right: 162px;
+    top: 25%;
+}
+
+.raya{
+    position: absolute;
+    background-color: black;
+    width: 5px;
+    height: 70px;
+    top: 105px;
+    right: 172px;
+}
+
+#b1{
+    rotate: 90deg;
+    right: 50px;
+    top: 110px;
+}
+
+#b2{
+    rotate: 110deg;
+    right: 50px;
+    top: 140px;
+}
+
+#b3{
+    rotate: 125deg;
+    right: 50px;
+    top: 170px;
+}
+
+#b4{
+    rotate: 90deg;
+    left: 50px;
+    top: 110px;
+}
+
+#b5{
+    rotate: -110deg;
+    left: 50px;
+    top: 140px;
+}
+
+#b6{
+    rotate: -125deg;
+    left: 50px;
+    top: 170px;
+}
+
+#boca{
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    right: 142px;
+    bottom: 25%;
+}
